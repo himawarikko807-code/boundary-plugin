@@ -1,0 +1,22 @@
+{
+  "name": "mariko-plugins",
+  "description": "Mariko Mochimaru's personal Claude Code/Cowork plugin marketplace",
+  "owner": {
+    "name": "Mariko Mochimaru",
+    "email": "himawarikko807@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "boundary",
+      "source": "./plugins/boundary",
+      "description": "Auto modeセッション冒頭のBoundary宣言テンプレを展開する。引数に作業内容を渡すと、確認が必要な操作と自動で進めてよい操作を明示した宣言文を生成する。",
+      "version": "0.1.0",
+      "author": {
+        "name": "Mariko Mochimaru",
+        "email": "himawarikko807@gmail.com"
+      },
+      "homepage": "https://amarielle.co.jp",
+      "category": "workflow"
+    }
+  ]
+}

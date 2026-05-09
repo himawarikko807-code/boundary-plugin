@@ -1,45 +1,51 @@
-# boundary-plugin
+# mariko-plugins marketplace
 
-Auto modeセッション冒頭のBoundary宣言テンプレを展開するpluginミラー版。
+Mariko Mochimaru's personal Claude Code / Cowork plugin marketplace.
 
-正本: `~/.claude/commands/boundary.md`
-このplugin: 配布検証用ミラー
+## Available plugins
 
-## インストール（ローカル開発）
+| Plugin | Description |
+|---|---|
+| `boundary` | Auto modeセッション冒頭のBoundary宣言テンプレ展開 |
 
-```bash
-claude --plugin-dir ~/.claude/plugins-dev/boundary-plugin
+## How to install
+
+### Claude Code (CLI)
+
+```
+/plugin marketplace add himawarikko807-code/boundary-plugin
+/plugin install boundary@mariko-plugins
 ```
 
-起動後:
+After install:
 
 ```
 /boundary:boundary HP改修
 ```
 
-namespace `boundary:` がついた状態で発火する。
+### Claude Cowork (claude.ai)
 
-## ファイル構造
+Use `/plugin` UI from within Cowork:
+1. Add marketplace `himawarikko807-code/boundary-plugin`
+2. Install `boundary` plugin
+3. Trigger with `/boundary:boundary <作業内容>`
+
+## Repo structure
 
 ```
 boundary-plugin/
 ├── .claude-plugin/
-│   └── plugin.json
-├── commands/
-│   └── boundary.md
-└── README.md
+│   └── marketplace.json   ← marketplace catalog
+└── plugins/
+    └── boundary/
+        ├── .claude-plugin/
+        │   └── plugin.json
+        ├── commands/
+        │   └── boundary.md
+        └── README.md
 ```
 
-## 注意
+## Maintenance
 
-これはミラー版。**正本は `~/.claude/commands/boundary.md`**。
-plugin側を直接編集しない。正本を更新したら、plugin側に手動コピー。
-
-## 配布
-
-- **Claude Code他環境への配布**: GitHubでpublic/private repoにpush → marketplace経由でinstall
-- **Cowork側への配布**: 同上。Cowork固有のlocal upload経路は2026-05時点で未確認
-
-## バージョン履歴
-
-- 0.1.0 (2026-05-09): 初回plugin化PoC
+- 正本: `~/.claude/commands/boundary.md`（Mariko's local Claude Code）
+- このrepo: 配布用ミラー。正本更新時は手動で `plugins/boundary/commands/boundary.md` にもコピー
