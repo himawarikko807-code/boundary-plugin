@@ -1,0 +1,9 @@
+{
+  "name": "boundary",
+  "description": "Auto modeセッション冒頭のBoundary宣言テンプレを展開する。引数に作業内容を渡すと、確認が必要な操作と自動で進めてよい操作を明示した宣言文を生成する。",
+  "version": "0.1.0",
+  "author": {
+    "name": "Mariko Mochimaru",
+    "url": "https://amarielle.co.jp"
+  }
+}
