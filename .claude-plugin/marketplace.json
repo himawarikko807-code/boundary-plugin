@@ -17,6 +17,18 @@
       },
       "homepage": "https://amarielle.co.jp",
       "category": "workflow"
+    },
+    {
+      "name": "ohayou-mobile",
+      "source": "./plugins/ohayou-mobile",
+      "description": "朝のブリーフィング（Cowork/モバイル特化版）。今日の予定・昨日の続き・今日の最優先を1枚にまとめる。寝起きスマホからの利用を想定。",
+      "version": "0.1.0",
+      "author": {
+        "name": "Mariko Mochimaru",
+        "email": "himawarikko807@gmail.com"
+      },
+      "homepage": "https://amarielle.co.jp",
+      "category": "workflow"
     }
   ]
 }

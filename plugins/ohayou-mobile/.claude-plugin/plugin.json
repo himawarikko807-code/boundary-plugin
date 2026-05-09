@@ -1,0 +1,9 @@
+{
+  "name": "ohayou-mobile",
+  "description": "朝のブリーフィング（Cowork/モバイル特化版）。今日の予定・昨日の続き・今日の最優先を1枚にまとめる。",
+  "version": "0.1.0",
+  "author": {
+    "name": "Mariko Mochimaru",
+    "url": "https://amarielle.co.jp"
+  }
+}
